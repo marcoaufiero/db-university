@@ -1,0 +1,53 @@
+Prima query
+
+SELECT * 
+FROM `students` 
+WHERE `date_of_birth` LIKE '1990%';
+
+
+Seconda Query
+
+SELECT * 
+FROM `courses`
+WHERE `cfu` > 10;
+
+
+Terza Query
+
+SELECT *
+FROM `students` 
+WHERE YEAR(`date_of_birth`) < 1992;
+
+
+Quarta Query
+
+SELECT * 
+FROM `courses` 
+WHERE `period` LIKE 'I semestre' AND `year` = 1;
+
+
+Quinta Query
+
+SELECT * 
+FROM `exams` 
+WHERE `date` = '2020-06-20' AND `hour` > '14:00:00';
+
+
+Quinta Query
+
+SELECT * 
+FROM `degrees` 
+WHERE `level` LIKE 'magistrale';
+
+
+Sesta Query
+
+SELECT COUNT(*)
+FROM `departments`;
+
+
+Settima Query
+
+SELECT * 
+FROM `teachers` 
+WHERE `phone` IS null;
