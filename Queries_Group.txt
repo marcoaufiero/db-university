@@ -1,0 +1,26 @@
+Prima Query 
+
+SELECT `year`, COUNT(*) AS `Numbers of subscriptions`
+FROM `courses`
+GROUP BY `year`
+
+
+Seconda Query
+
+SELECT `office_address`, COUNT(*) as `Numbers of teachers` 
+FROM `teachers` 
+GROUP BY `office_address`
+
+
+Terza Query
+
+SELECT `exam_id` AS `Exam ID`, AVG(`vote`) AS `Average Score` 
+FROM `exam_student` 
+GROUP BY `exam_id`
+
+
+Quarta Query
+
+SELECT `department_id`, COUNT(*) AS `Numbers of degrees` 
+FROM `degrees` 
+GROUP BY `department_id`
